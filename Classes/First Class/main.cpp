@@ -1,14 +1,18 @@
 #include <iostream>
-#include "Iot.h"
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+#include "Iot.h" // Assuming "Iot.h" contains the declaration of the Iot class.
 
 int main() {
-	Iot a;
-	int n;
-	a.shape(4);
-	cout<<"Enter a number for table: ";
-	cin>>n;
-	a.table(4);
-	return 0;
+    Iot a; // Create an object of the Iot class.
+
+    int n;
+    a.shape(4); // Call the shape() function with argument 4 to print a shape.
+    
+    // Prompt the user to enter a number.
+    cout << "Enter a number for the table: ";
+    cin >> n;
+    
+    // Call the table() function with the user-input number to print the multiplication table.
+    a.table(n);
+
+    return 0;
 }
